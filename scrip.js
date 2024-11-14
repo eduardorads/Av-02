@@ -59,4 +59,4 @@ function proximaPergunta() {
 mostrarPergunta();
 
 
-aaaaaaaaaaaa
+aaaaaaaaaaa
