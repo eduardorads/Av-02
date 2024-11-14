@@ -1,5 +1,5 @@
 // Perguntas do quiz
-const pergntas = [
+const perguntas = [
     {
         pergunta: "O que significa IA?",
         respostas: ["Inteligência Artificial", "Informação Automatizada", "Interação Automática"],
