@@ -64,7 +64,7 @@ function proximaPergunta() {
     if (indicePerguntaAtual < perguntas.length) {
         mostrarPergunta();
     } else {
-        document.getElementById('resultado').textContent = "Você acertou " + pontuacao + " de " + perguntas.length + " perguntas!";
+        document.getElementById('resultado').textContent = `Você acertou ${pontuacao} de ${perguntas.length} perguntas!`;
         document.getElementById('quiz').style.display = 'none';
         document.getElementById('resultado').style.display = 'block';
     }
