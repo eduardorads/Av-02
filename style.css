@@ -1,175 +1,28 @@
-/* Resetando o estilo padrão do navegador */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #fafafa;
-    color: #944de6;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Cabeçalho */
-header {
-    background: #2483e9; /* Azul mais claro */
+header, footer {
+    background-color: #007acc;
     color: white;
-    padding: 20px;
     text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 1em;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-/* Bloco principal */
 main {
-    flex: 1; /* Para garantir que o main ocupe o espaço restante */
+    padding: 2em;
+    text-align: center;
 }
 
-/* Seções de conteúdo */
-section {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo do quiz */
-#quiz {
-    margin-top: 20px;
-}
-
-/* Estilo da pergunta */
-#pergunta {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-/* Opções de resposta */
-#opcoes {
-    margin: 10px 0;
-}
-
-#opcoes label {
-    display: block;
-    margin: 8px 0;
-    padding: 12px;
-    background: #f4f4f4;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Feedback quando a opção é selecionada */
-#opcoes input[type="radio"]:checked + label {
-    background-color: #007BFF;
-    color: white;
-}
-
-/* Efeito hover nas opções */
-#opcoes label:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
-
-/* Estilo dos botões */
 button {
-    padding: 12px 24px;
-    background-color: #007BFF;
+    padding: 10px 20px;
+    background-color: #007acc;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-button:active {
-    background-color: #003d80;
-    transform: translateY(1px);
-}
-
-/* Rodapé */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-/* Estilo para a resposta correta e errada */
-button.correto {
-    background-color: #4CAF50; /* Verde para a resposta correta */
-    color: white;
-}
-
-button.errado {
-    background-color: #F44336; /* Vermelho para a resposta errada */
-    color: white;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.7em;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    button {
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 1.4em;
-    }
-
-    #pergunta {
-        font-size: 1.2em;
-    }
-
-    #opcoes label {
-        font-size: 0.9em;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-    }
+    cursor: pointer;
 }
