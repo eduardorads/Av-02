@@ -57,5 +57,3 @@ function proximaPergunta() {
 
 // Inicializa o quiz
 mostrarPergunta();
-
-
