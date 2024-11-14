@@ -32,6 +32,11 @@ h1 {
     margin-bottom: 10px;
 }
 
+p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
 /* Bloco principal */
 main {
     flex: 1; /* Para garantir que o main ocupe o espaço restante */
@@ -53,7 +58,7 @@ section {
 
 /* Estilo da pergunta */
 #pergunta {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
 
@@ -65,20 +70,23 @@ section {
 #opcoes label {
     display: block;
     margin: 8px 0;
-    padding: 8px;
+    padding: 12px;
     background: #f4f4f4;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Feedback quando a opção é selecionada */
 #opcoes input[type="radio"]:checked + label {
     background-color: #007BFF;
     color: white;
 }
 
+/* Efeito hover nas opções */
 #opcoes label:hover {
     background-color: #e0e0e0;
+    transform: scale(1.05);
 }
 
 /* Estilo dos botões */
@@ -89,7 +97,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.1em;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -120,7 +128,7 @@ footer {
     }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     section {
@@ -130,15 +138,25 @@ footer {
     button {
         padding: 10px 20px;
     }
+
+    /* Ajuste nas opções do quiz */
+    #opcoes label {
+        font-size: 1em;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     #pergunta {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     #opcoes label {
@@ -147,5 +165,6 @@ footer {
 
     button {
         width: 100%;
+        padding: 12px;
     }
 }
