@@ -10,7 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #fafafa;
-    color: #333;
+    color: #944de6;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: #007BFF; /* Azul mais claro */
+    background: #2483e9; /* Azul mais claro */
     color: white;
     padding: 20px;
     text-align: center;
