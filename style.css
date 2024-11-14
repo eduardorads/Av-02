@@ -121,6 +121,17 @@ footer {
     border-radius: 8px;
 }
 
+/* Estilo para a resposta correta e errada */
+button.correto {
+    background-color: #4CAF50; /* Verde para a resposta correta */
+    color: white;
+}
+
+button.errado {
+    background-color: #F44336; /* Vermelho para a resposta errada */
+    color: white;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     body {
@@ -138,6 +149,7 @@ footer {
     button {
         padding: 10px 20px;
     }
+}
 
 @media (max-width: 480px) {
     body {
@@ -159,5 +171,5 @@ footer {
     button {
         width: 100%;
         padding: 12px;
-        
     }
+}
