@@ -1,7 +1,7 @@
 // Perguntas do quiz
 const perguntas = [
     {
-        pergunta: "O qe significa IA?",
+        pergunta: "O que significa IA?",
         respostas: ["Inteligência Artificial", "Informação Automatizada", "Interação Automática"],
         respostaCorreta: 0
     },
